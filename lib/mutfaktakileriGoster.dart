@@ -69,7 +69,7 @@ class _MutfaktakileriGosterState extends State<MutfaktakileriGoster> {
     return SizedBox(
       height: 300,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14),
+        padding: const EdgeInsets.only(left: 10),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: _items.length,

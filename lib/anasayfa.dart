@@ -16,8 +16,6 @@ class _AnasayfaState extends State<Anasayfa> {
     var ekranBilgisi = MediaQuery.of(context);
     final double ekranYuksekligi = ekranBilgisi.size.height;
     final double ekranGenisligi = ekranBilgisi.size.width;
-    print("Genişlik: $ekranGenisligi");
-    print("Yükseklik: $ekranYuksekligi");
 
     return Scaffold(
       appBar: AppBar(
@@ -27,7 +25,7 @@ class _AnasayfaState extends State<Anasayfa> {
           children: const [
             Text(
               "Yemeksepeti",
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 2,
@@ -54,7 +52,7 @@ class _AnasayfaState extends State<Anasayfa> {
             children: [
               Container(
                 width: ekranGenisligi,
-                height: ekranYuksekligi / 13,
+                height: ekranYuksekligi / 14,
                 color: anaRenk,
                 child: Padding(
                   padding: const EdgeInsets.only(
@@ -64,16 +62,17 @@ class _AnasayfaState extends State<Anasayfa> {
                         onPressed: () {},
                         child: Row(
                           children: [
-                            Icon(
-                              Icons.search_rounded,
-                              color: yaziRenk1,
-                            ),
-                            SizedBox(
-                              width: 10,
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                              child: Icon(
+                                Icons.search_rounded,
+                                color: yaziRenk1,
+                                size: 26,
+                              ),
                             ),
                             Text(
                               "Restoran veya mağaza arayın",
-                              style: TextStyle(color: yaziRenk1),
+                              style: TextStyle(color: yaziRenk1,fontSize: 14),
                             )
                           ],
                         )),
@@ -145,22 +144,22 @@ class _AnasayfaState extends State<Anasayfa> {
                 height: 5,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 12, top: 12),
+                padding: const EdgeInsets.all(16),
                 child: Text(
                   "Kampanyalar",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: yaziRenk3,
                       fontWeight: FontWeight.bold),
                 ),
               ),
               KampanyalariGoster(),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 16,bottom: 4,top: 10),
                 child: Text(
                   "Mutfak",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: yaziRenk3,
                       fontWeight: FontWeight.bold),
                 ),

@@ -34,9 +34,9 @@ class _KampanyalariGosterState extends State<KampanyalariGoster> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 190,
+      height: 180,
       child: Padding(
-          padding: const EdgeInsets.all(12),
+          padding: const EdgeInsets.only(left: 12),
           child: FutureBuilder<List<Kampanya>>(
             future: kampanyalariGetir(),
             builder: (context, snapshot) {
