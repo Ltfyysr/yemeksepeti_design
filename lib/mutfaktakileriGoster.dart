@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yemeksepeti_page_design/mutfak.dart';
 
-
 class MutfaktakileriGoster extends StatefulWidget {
   const MutfaktakileriGoster({Key? key}) : super(key: key);
 
@@ -90,15 +89,17 @@ class _MutfaktakileriGosterState extends State<MutfaktakileriGoster> {
                         Padding(
                           padding: const EdgeInsets.only(bottom: 20),
                           child: Center(
-                              child: Text(_items[indeks].resimYazi,
-                                style: const TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),maxLines: 2,)),
+                              child: Text(
+                            _items[indeks].resimYazi,
+                            style: const TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.bold),
+                            maxLines: 2,
+                          )),
                         ),
                       ],
                     ),
                   ),
                 ),
-
                 SizedBox(
                   height: 150,
                   child: Card(
@@ -112,7 +113,8 @@ class _MutfaktakileriGosterState extends State<MutfaktakileriGoster> {
                         Center(
                             child: Text(_items2[indeks].resimYazi,
                                 style: const TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold))),
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold))),
                       ],
                     ),
                   ),

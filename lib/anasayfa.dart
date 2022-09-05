@@ -11,7 +11,6 @@ class Anasayfa extends StatefulWidget {
 }
 
 class _AnasayfaState extends State<Anasayfa> {
-
   @override
   Widget build(BuildContext context) {
     var ekranBilgisi = MediaQuery.of(context);
@@ -30,7 +29,9 @@ class _AnasayfaState extends State<Anasayfa> {
               "Yemeksepeti",
               style: TextStyle(fontSize: 16),
             ),
-            SizedBox(height: 2,),
+            SizedBox(
+              height: 2,
+            ),
             Text(
               "Esentepe Dede Korkut Sk. No:28/1",
               style: TextStyle(fontSize: 12),
@@ -94,9 +95,7 @@ class _AnasayfaState extends State<Anasayfa> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           GestureDetector(
-                            onTap: () {
-                              print("mahalle tıklandı");
-                            },
+                            onTap: () {},
                             child: Container(
                               width: 180,
                               height: 70,
@@ -105,16 +104,14 @@ class _AnasayfaState extends State<Anasayfa> {
                                   image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image:
-                                      AssetImage('resimler/mahalle.png'))),
+                                          AssetImage('resimler/mahalle.png'))),
                             ),
                           ),
                           SizedBox(
                             height: 5,
                           ),
                           GestureDetector(
-                            onTap: () {
-                              print("market tıklandı");
-                            },
+                            onTap: () {},
                             child: Container(
                               width: 180,
                               height: 140,
@@ -123,15 +120,13 @@ class _AnasayfaState extends State<Anasayfa> {
                                   image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image:
-                                      AssetImage('resimler/market.png'))),
+                                          AssetImage('resimler/market.png'))),
                             ),
                           )
                         ],
                       ),
                       GestureDetector(
-                        onTap: () {
-                          print("yemek tıklandı");
-                        },
+                        onTap: () {},
                         child: Container(
                           width: 180,
                           height: 250,
