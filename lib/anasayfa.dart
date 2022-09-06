@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yemeksepeti_page_design/colors.dart';
-import 'package:yemeksepeti_page_design/drawer_sayfa.dart';
+import 'package:yemeksepeti_page_design/drawer_sayfasi.dart';
 import 'package:yemeksepeti_page_design/kampanyalariGoster.dart';
 import 'package:yemeksepeti_page_design/mutfaktakileriGoster.dart';
 
@@ -170,7 +170,7 @@ class _AnasayfaState extends State<Anasayfa> {
           ),
         ),
       ),
-      drawer:DrawerSayfa(),
+      drawer:DrawerSayfasi() ,
     );
   }
 }
