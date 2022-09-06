@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:yemeksepeti_page_design/anasayfa.dart';
 
 void main() {
@@ -16,7 +15,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
           appBarTheme: const AppBarTheme(
-        systemOverlayStyle: SystemUiOverlayStyle.light,
         elevation: 0,
       )),
       home: const Anasayfa(),
