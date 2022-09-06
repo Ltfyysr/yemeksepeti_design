@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yemeksepeti_page_design/colors.dart';
+import 'package:yemeksepeti_page_design/drawer_sayfa.dart';
 import 'package:yemeksepeti_page_design/kampanyalariGoster.dart';
 import 'package:yemeksepeti_page_design/mutfaktakileriGoster.dart';
 
@@ -169,23 +170,7 @@ class _AnasayfaState extends State<Anasayfa> {
           ),
         ),
       ),
-      drawer: Drawer(
-        child: ListView(padding: EdgeInsets.zero, children: [
-          DrawerHeader(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Giriş Yap/Hesap Oluştur",
-                  style: TextStyle(color: Colors.white, fontSize: 14),
-                ),
-              ],
-            ),
-            decoration: BoxDecoration(color: Color(0xFFf72858)),
-          ),
-        ]),
-      ),
+      drawer:DrawerSayfa(),
     );
   }
 }
