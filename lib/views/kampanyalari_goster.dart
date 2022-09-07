@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yemeksepeti_page_design/kampanya.dart';
+import 'package:yemeksepeti_page_design/entity/kampanya.dart';
 
 class KampanyalariGoster extends StatefulWidget {
   @override

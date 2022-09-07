@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:yemeksepeti_page_design/colors.dart';
-import 'package:yemeksepeti_page_design/drawer_sayfasi.dart';
-import 'package:yemeksepeti_page_design/kampanyalari_goster.dart';
-import 'package:yemeksepeti_page_design/mutfaktakileri_goster.dart';
+import 'package:yemeksepeti_page_design/views/colors.dart';
+import 'package:yemeksepeti_page_design/views/drawer_sayfasi.dart';
+import 'package:yemeksepeti_page_design/views/kampanyalari_goster.dart';
+import 'package:yemeksepeti_page_design/views/mutfaktakileri_goster.dart';
 
 class Anasayfa extends StatefulWidget {
   const Anasayfa({Key? key}) : super(key: key);

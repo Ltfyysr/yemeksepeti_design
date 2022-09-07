@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yemeksepeti_page_design/anasayfa.dart';
+import 'package:yemeksepeti_page_design/views/anasayfa.dart';
 
 void main() {
   runApp(const MyApp());

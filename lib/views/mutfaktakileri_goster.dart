@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yemeksepeti_page_design/mutfak.dart';
+import 'package:yemeksepeti_page_design/entity/mutfak.dart';
 
 class MutfaktakileriGoster extends StatefulWidget {
   const MutfaktakileriGoster({Key? key}) : super(key: key);
